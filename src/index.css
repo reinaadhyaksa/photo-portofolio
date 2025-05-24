@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.filter-active {
+    background-color: #d97706;
+    color: white;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 24px;
+    height: 100%;
+    width: 2px;
+    background: #d97706;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-input:focus {
+    border-color: #d97706;
+    box-shadow: 0 0 0 1px #d97706;
+}
